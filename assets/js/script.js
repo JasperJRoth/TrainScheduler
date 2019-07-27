@@ -1,3 +1,14 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyDgFu5jD9oPZRbjuz4-jwa6LmR43YGgclM",
+    authDomain: "train-scheduler-d2801.firebaseapp.com",
+    databaseURL: "https://train-scheduler-d2801.firebaseio.com",
+    projectId: "train-scheduler-d2801",
+    storageBucket: "",
+    messagingSenderId: "494279263077",
+    appId: "1:494279263077:web:1662f74b37eb3591"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 function createTrainObj(){
     var name = $("#train_name").val().trim();
