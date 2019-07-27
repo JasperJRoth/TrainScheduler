@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Scheduler</title>
+
+    <!-- Jquery Reference -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Material Icons Reference -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="brand-logo center">It's Train Time</div>
+        </div>
+    </nav>
+
+    <div class="section"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h5>Current Train Schedule</h5>
+                <div class="divider"></div>
+                <div class="section"></div>
+                <table class="striped responsive-table">
+                    <thread>
+                        <tr>
+                            <td><b>Train Name</b></td>
+                            <td><b>Destination</b></td>
+                            <td><b>Frequency (min)</b></td>
+                            <td><b>Next Arrival</b></td>
+                            <td><b>Minutes Away</b></td>
+                        </tr>
+                    </thread>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h5>Add Train</h5>
+                <div class="divider"></div>
+                <div class="section"></div>
+                <div class="input-field">
+                    <i class="material-icons prefix">text_fields</i>
+                    <input id="train_name" type="text">
+                    <label for="train_name">Train Name</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">location_city</i>
+                    <input id="train_destination" type="text">
+                    <label for="train_destination">Destination</label>
+                </div>
+                <i class="material-icons left">timer</i>
+                <div>Train Frequency</div>
+                <p class="range-field">
+                    <input type="range" id="train_frequency" min="1" max="60" />
+                </p>
+                <div class="section"></div>
+                <div class="row">
+                    <a class="btn col offset-s1" onclick="createTrainObj()">Submit Train</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
