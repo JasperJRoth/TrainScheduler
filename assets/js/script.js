@@ -74,7 +74,7 @@ function displayTrains(){
             <td>${train.name}</td>
             <td>${train.destination}</td>
             <td>${train.frequency}</td>
-            <td>${nextArrival.getHours()}:${nextArrival.getMinutes()}</td>
+            <td>${nextArrival.getHours()}:${nextArrival.getMinutes() < 10 ? "0" + nextArrival.getMinutes() : nextArrival.getMinutes()}</td>
             <td>${Math.floor(minTill)}</td>
         </tr>`));
     });
